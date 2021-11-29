@@ -1,0 +1,30 @@
+//COLORS
+//LIGHT THEME
+$blue: hsl(209, 89, 59);
+$dark-blue: hsl(210, 77, 28);
+$soft-red: hsl(355, 82, 61);
+
+$black: hsl(0, 0, 15);
+$dark-grayish: hsl(0, 0, 60);
+$grayish: hsl(0, 0, 78);
+$light-grayish: hsl(0, 0, 85);
+$white: hsl(0, 0, 98);
+
+$black-opacity: hsla(0, 0, 15, 65%);
+$light-grayish-opacity: hsla(0, 0, 85, 50%);
+
+//Maps
+$breakpoints: (
+  // 400px
+  xs: 25em,
+  // 544px
+  ms: 34em,
+  // 768px
+  md: 48em,
+  // 960px
+  lg: 60em,
+  // 1280px
+  xl: 80em,
+  // 1440px
+  xxl: 90em
+);
