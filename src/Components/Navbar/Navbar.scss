@@ -1,3 +1,21 @@
+@use '../../scss/variables' as *;
+
 .navbar {
-  background-color: red;
+  border-top: 1px solid $light-grayish;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: $mobile-padding;
+
+  .icon {
+    display: flex;
+    place-content: center;
+    cursor: pointer;
+
+    &:hover svg {
+      path {
+        fill: red;
+      }
+    }
+  }
 }
