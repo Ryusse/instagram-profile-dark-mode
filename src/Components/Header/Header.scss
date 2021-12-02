@@ -1,15 +1,17 @@
 @use '../../scss/variables' as *;
 
 .header {
+  z-index: 1;
   position: sticky;
   top: 0;
 
+  padding: $mobile-padding;
+  background-color: $white;
   border-bottom: 1px solid $light-grayish;
 
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: $mobile-padding;
 
   &__container {
     display: flex;

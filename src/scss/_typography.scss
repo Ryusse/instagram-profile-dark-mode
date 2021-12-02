@@ -1,5 +1,4 @@
-@use './variables' as *;
-
+@use "./variables" as *;
 
 @font-face {
   font-family: "SF Pro Text";
@@ -34,8 +33,30 @@ body {
   font-size: 16px;
 }
 
-h2{
+h2 {
   color: $black;
-  
 }
 
+p {
+  color: $black;
+}
+
+.text-header-bold {
+  font-size: 1rem;
+  font-weight: $font-weight-bold;
+}
+
+.text-regular {
+  font-size: 0.9rem;
+  font-weight: $font-weight-regular;
+}
+
+.text-semibold {
+  font-size: 0.9rem;
+  font-weight: $font-weight-semibold;
+}
+
+.text-bold {
+  font-size: 0.9rem;
+  font-weight: $font-weight-bold;
+}

@@ -1,11 +1,17 @@
 @use '../../scss/variables' as *;
 
 .navbar {
+  z-index: 1;
+  position: sticky;
+  bottom: 0;
+
+  padding: $mobile-padding;
+  background-color: $white;
   border-top: 1px solid $light-grayish;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: $mobile-padding;
 
   .icon {
     display: flex;
@@ -17,5 +23,10 @@
         fill: red;
       }
     }
+  }
+
+  &__image {
+    border-radius: 50%;
+    border: 1.5px solid $black;
   }
 }

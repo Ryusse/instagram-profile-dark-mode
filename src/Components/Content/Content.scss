@@ -1,0 +1,24 @@
+@use "../../scss/variables" as *;
+
+.content {
+  padding: $mobile-padding;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__bio {
+    display: flex;
+    align-items: start;
+  }
+
+  &__buttons {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: space-between;
+  }
+}
