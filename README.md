@@ -8,7 +8,7 @@
 
 ## **Figma**
 
-### [Figma design](https://www.figma.com/file/z8dOy3r6b18Gl1dnrAZbA4/Instagram-profile-dark-mode?node-id=9%3A841)
+<!-- ### [Figma design](https://www.figma.com/file/z8dOy3r6b18Gl1dnrAZbA4/Instagram-profile-dark-mode?node-id=9%3A841) -->
 
 ## **Build with :**
 
