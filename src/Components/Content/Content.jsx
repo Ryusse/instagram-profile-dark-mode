@@ -1,21 +1,34 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 import ImageProfileContent from './ImageProfile/ImageProfileContent'
 import Bio from './Bio/Bio'
 import Stats from './Stats/Stats'
 import Button from '../Button/Button'
+import Dropdown from '../Button/Dropdown'
+import Story from './Story/Story'
+import Tabs from './Tabs/Tabs'
 
 import './Content.scss'
-import Dropdown from '../Button/Dropdown'
+
+import user from '../../assets/data/users.json'
 
 export default function Content() {
-  const [isActive, setIsActive] = useState(false)
+  const [user, setUser] = useState(null)
+  const [storyOpen, setStoryOpen] = useState(false)
+
+  const handleToggle = () => {
+    function toggleStory(prevStoryOpen) {
+      return !prevStoryOpen
+    }
+
+    setStoryOpen(toggleStory)
+  }
 
   return (
     <div className='content'>
       <div className='content__header'>
-        <ImageProfileContent />
-        <Stats />
+        <ImageProfileContent user={user} />
+        <Stats user={user} />
       </div>
 
       <div className='content__bio'>
@@ -25,10 +38,19 @@ export default function Content() {
       <div className='content__buttons'>
         <Button content={'Follow'} className={'button--cta'} />
         <Button content={'Message'} className={'button--light'} />
-        <Dropdown onClick={(e) => setIsActive(!isActive)} />
+
+        <div onClick={handleToggle}>
+          <Dropdown />
+        </div>
       </div>
 
-      <div className='content__slider'></div>
+      {storyOpen && (
+        <div className='content__stories'>
+          <Story />
+        </div>
+      )}
+
+      <Tabs />
     </div>
   )
 }

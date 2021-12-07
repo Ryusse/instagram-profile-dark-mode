@@ -1,11 +1,11 @@
-@use '../../scss/variables' as *;
+@use "../../scss/variables" as *;
 
 .header {
   z-index: 1;
   position: sticky;
   top: 0;
 
-  padding: $mobile-padding;
+  padding: 1rem $mobile-padding;
   background-color: $white;
   border-bottom: 1px solid $light-grayish;
 
