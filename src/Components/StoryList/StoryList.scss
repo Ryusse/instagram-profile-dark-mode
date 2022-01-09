@@ -1,0 +1,15 @@
+@use "../../assets/scss/variables" as *;
+
+.story-list {
+  padding: 0 $mobile-padding;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-auto-flow: column;
+  gap: 0.938rem;
+  overflow-x: scroll;
+  -ms-overflow-style: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}

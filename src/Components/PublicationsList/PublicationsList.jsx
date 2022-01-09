@@ -1,6 +1,6 @@
 import { useState, useEffect, useLayoutEffect } from 'react'
 
-import './Publications.scss'
+import './PublicationsList.scss'
 
 import Publication from '../Publication/Publication'
 

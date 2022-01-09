@@ -1,0 +1,7 @@
+.profile {
+  display: grid;
+  place-content: center;
+  &__img {
+    max-width: 5.375rem;
+  }
+}

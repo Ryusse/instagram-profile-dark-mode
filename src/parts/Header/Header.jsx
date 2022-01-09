@@ -1,9 +1,8 @@
 import './Header.scss'
 
-import New from './New/New'
-import Menu from './Menu/Menu'
-
-import UserName from './UserName/UserName'
+import UserName from '../../Components/UserName/UserName'
+import New from '../../Components/New/New'
+import Menu from '../../Components/Menu/Menu'
 
 export default function Header() {
   return (

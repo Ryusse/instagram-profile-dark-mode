@@ -1,4 +1,4 @@
-@use "../../scss/variables" as *;
+@use "../../assets/scss/variables" as *;
 
 .content {
   display: flex;
@@ -8,6 +8,7 @@
   &__header {
     display: flex;
     justify-content: space-between;
+    gap: 0.5rem;
     padding: 1rem $mobile-padding 0 $mobile-padding;
   }
 
@@ -21,12 +22,6 @@
     display: flex;
     gap: 0.5rem;
     justify-content: space-between;
-    padding: 0 $mobile-padding;
-  }
-
-  &__stories {
-    display: flex;
-    gap: 1rem;
     padding: 0 $mobile-padding;
   }
 }

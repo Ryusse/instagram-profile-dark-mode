@@ -2,11 +2,11 @@ import { useState } from 'react'
 
 import './Tabs.scss'
 
-import GridIcon from './Icons/GridIcon'
-import ReelIcon from './Icons/ReelIcon'
-import IgtvIcon from './Icons/IgtvIcon'
-import TagsIcon from './Icons/TagsIcon'
-import PublicationsList from './PublicationsList/PublicationsList'
+import GridIcon from '../../icons/GridIcon'
+import ReelIcon from '../../icons/ReelIcon'
+import IgtvIcon from '../../icons/IgtvIcon'
+import TagsIcon from '../../icons/TagsIcon'
+import PublicationsList from '../PublicationsList/PublicationsList'
 
 export default function Tabs() {
   const [activeTab, setActiveTab] = useState(0)

@@ -1,9 +1,8 @@
-import './scss/main.scss'
-import './App.scss'
+import './assets/scss/main.scss'
 
-import Header from './Components/Header/Header'
-import Navbar from './Components/Navbar/Navbar'
-import Content from './Components/Content/Content'
+import Header from './parts/Header/Header'
+import Navbar from './parts/Navbar/Navbar'
+import Content from './parts/Content/Content'
 
 function App() {
   return (

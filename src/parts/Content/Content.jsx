@@ -1,12 +1,12 @@
 import { useState, useEffect } from 'react'
 
-import ImageProfileContent from './ImageProfile/ImageProfileContent'
-import Bio from './Bio/Bio'
-import Stats from './Stats/Stats'
-import Button from '../Button/Button'
-import Dropdown from '../Button/Dropdown'
-import Story from './Story/Story'
-import Tabs from './Tabs/Tabs'
+import ImageProfileContent from '../../Components/ImageProfile/ImageProfile'
+import Bio from '../../Components/Bio/Bio'
+import Stats from '../../Components/Stats/Stats'
+import Button from '../../Components/Button/Button'
+import Dropdown from '../../Components/Dropdown/Dropdown'
+import StoryList from '../../Components/StoryList/StoryList'
+import Tabs from '../../Components/Tabs/Tabs'
 
 import './Content.scss'
 
@@ -40,15 +40,11 @@ export default function Content() {
         <Button content={'Message'} className={'button--light'} />
 
         <div onClick={handleToggle}>
-          <Dropdown />
+          <Dropdown open={storyOpen} />
         </div>
       </div>
 
-      {storyOpen && (
-        <div className='content__stories'>
-          <Story />
-        </div>
-      )}
+      <StoryList open={storyOpen} />
 
       <Tabs />
     </div>
