@@ -1,17 +1,15 @@
 import './Header.scss'
 
 import UserName from '../../Components/UserName/UserName'
-import New from '../../Components/New/New'
-import Menu from '../../Components/Menu/Menu'
+import NewIcon from '../../icons/NewIcon'
+import Toggle from '../../Components/Toggle/Toggle'
 
 export default function Header() {
   return (
     <header className='header'>
       <UserName />
-      <div className='header__container'>
-        <New />
-        <Menu />
-      </div>
+      <NewIcon />
+      <Toggle />
     </header>
   )
 }

@@ -9,17 +9,8 @@
   background-color: $white;
   border-bottom: 1px solid $light-grayish;
 
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  gap: 1.875rem;
   align-items: center;
-
-  &__container {
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-  }
-
-  &__username {
-    cursor: pointer;
-  }
 }

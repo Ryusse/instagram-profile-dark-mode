@@ -1,7 +1,7 @@
 export default function New() {
   return (
     <svg
-      className='header__new'
+      className='new'
       width='22'
       height='22'
       viewBox='0 0 22 22'
