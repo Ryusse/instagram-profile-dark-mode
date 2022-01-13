@@ -1,0 +1,33 @@
+@use "../../assets/scss/variables" as *;
+
+.navbar {
+  z-index: 2;
+  position: sticky;
+  bottom: 0;
+  padding: 1rem $mobile-padding;
+  background-color: $white;
+  border-top: 1px solid $light-grayish;
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__item {
+    // padding: 0.95rem;
+    // width: calc(100% / 4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:nth-child(5) {
+      & img {
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        border: 1.5px solid $black;
+      }
+    }
+  }
+}

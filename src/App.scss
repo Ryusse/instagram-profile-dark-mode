@@ -1,6 +1,6 @@
-@use './scss/variables' as *;
+@use "./assets/scss/variables" as *;
 
 .app {
-  position: relative;
   background-color: $white;
+  position: relative;
 }

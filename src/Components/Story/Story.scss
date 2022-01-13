@@ -1,0 +1,24 @@
+@use "../../assets/scss/variables" as *;
+
+.story {
+  display: grid;
+  gap: 0.4rem;
+
+  &__image-container {
+    padding: 4px;
+    height: 4.063rem;
+    width: 4.063rem;
+    border: 1px solid $grayish;
+    border-radius: 50%;
+  }
+
+  &__image {
+    border-radius: 50%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  &__title {
+    justify-self: center;
+  }
+}

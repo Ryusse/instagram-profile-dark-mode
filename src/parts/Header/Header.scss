@@ -1,0 +1,16 @@
+@use "../../assets/scss/variables" as *;
+
+.header {
+  z-index: 1;
+  position: sticky;
+  top: 0;
+
+  padding: 1rem $mobile-padding;
+  background-color: $white;
+  border-bottom: 1px solid $light-grayish;
+
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  gap: 1.875rem;
+  align-items: center;
+}
