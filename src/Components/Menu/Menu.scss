@@ -1,0 +1,20 @@
+@use "../../assets/scss/variables" as *;
+
+.menu {
+  padding: 1.563rem 0;
+
+  position: fixed;
+  background-color: red;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  height: 18.438rem;
+  z-index: 1;
+  border-radius: 1.125rem 1.125rem 0 0;
+
+  &__item {
+    padding: 0.688rem 1rem;
+    display: flex;
+    gap: 0.938rem;
+  }
+}
