@@ -21,9 +21,9 @@ export default function Header() {
     <header className='header'>
       <UserName />
       <NewIcon />
-      <Toggle onclick={handleToggle} />
+      <Toggle onClick={handleToggle} />
 
-      {<Menu open={menuOpen} />}
+      {menuOpen && <Menu />}
     </header>
   )
 }

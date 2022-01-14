@@ -1,4 +1,4 @@
-export default function SaveIcon() {
+export default function SaveIcon({ className }) {
   return (
     <svg width='17' height='17' viewBox='0 0 17 17' fill='none' xmlns='http://www.w3.org/2000/svg'>
       <g clipPath='url(#clip0_8_781)'>
