@@ -1,8 +1,8 @@
 import ToggleIcon from '../../icons/ToggleIcon'
 
-export default function Toggle({ onclick }) {
+export default function Toggle({ onClick }) {
   return (
-    <button className='toggle'>
+    <button className='toggle' onClick={onClick}>
       <ToggleIcon className={'toggle__icon'} />
     </button>
   )
