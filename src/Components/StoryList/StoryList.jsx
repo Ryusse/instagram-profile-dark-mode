@@ -12,12 +12,6 @@ export default function StoryList({ open }) {
       <Story imageUrl={Story1} />
       <Story imageUrl={Story2} />
       <Story imageUrl={Story3} />
-      <Story imageUrl={Story3} />
-      <Story imageUrl={Story3} />
-      <Story imageUrl={Story3} />
-      <Story imageUrl={Story3} />
-      <Story imageUrl={Story3} />
-      <Story imageUrl={Story3} />
     </div>
   )
 }
