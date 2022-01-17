@@ -3,7 +3,7 @@
 
 ## **Demo**
 
-### [Preview](https://relaxed-leakey-16843a.netlify.app/)
+### [Preview](https://instagram-profile-clon.netlify.app/)
 
 
 ## **Figma**
