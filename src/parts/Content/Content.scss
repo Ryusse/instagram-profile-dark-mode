@@ -3,6 +3,8 @@
 .content {
   display: flex;
   flex-direction: column;
+  max-width: 938px;
+  margin: auto;
   gap: 1rem;
 
   &__header {
