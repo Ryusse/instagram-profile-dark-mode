@@ -4,9 +4,9 @@ import SettingsIcon from '../../icons/SettingsIcon'
 import SaveIcon from '../../icons/SaveIcon'
 import ThemeIcon from '../../icons/ThemeIcon'
 
-export default function menu() {
+export default function menu({ open, menuRef }) {
   return (
-    <div className='menu'>
+    <div ref={menuRef} className={`menu  ${open ? 'open' : ''} `}>
       <ul className='menu__list'>
         <li className='menu__item'>
           <figure>
