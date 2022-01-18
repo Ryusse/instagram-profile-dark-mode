@@ -1,7 +1,7 @@
 @use "../../assets/scss/variables" as *;
 
 .tabs {
-  .nav {
+  .tabnav {
     &__list {
       display: flex;
       justify-content: space-between;
@@ -31,13 +31,5 @@
     &__icon path.active {
       fill: $black;
     }
-  }
-
-  .content {
-    display: grid;
-    grid-template-columns: 1fr;
-    background-color: rgb(255, 221, 221);
-    height: max-content;
-    height: 100vh;
   }
 }

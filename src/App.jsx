@@ -1,4 +1,5 @@
 import './assets/scss/main.scss'
+import './App.scss'
 
 import Header from './parts/Header/Header'
 import Navbar from './parts/Navbar/Navbar'

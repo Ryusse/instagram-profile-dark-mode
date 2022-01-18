@@ -1,6 +1,8 @@
 @use "../../assets/scss/variables" as *;
 
 .navbar {
+  grid-area: navbar;
+
   z-index: 2;
   position: sticky;
   bottom: 0;
@@ -15,8 +17,6 @@
   }
 
   &__item {
-    // padding: 0.95rem;
-    // width: calc(100% / 4);
     display: flex;
     align-items: center;
     justify-content: center;

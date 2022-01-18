@@ -13,54 +13,54 @@ export default function Tabs() {
 
   return (
     <div className='tabs'>
-      <nav className='nav'>
-        <ul className='nav__list'>
+      <nav className='tabnav'>
+        <ul className='tabnav__list'>
           <li
-            className={`nav__item ${activeTab === 0 ? 'active' : null}`}
+            className={`tabnav__item ${activeTab === 0 ? 'active' : null}`}
             onClick={() => {
               setActiveTab(0)
             }}
           >
-            <GridIcon active={activeTab == 0 ? 'active' : null} />
+            <GridIcon className={'tabnav__icon'} active={activeTab == 0 ? 'active' : null} />
           </li>
           <li
-            className={`nav__item ${activeTab === 1 ? 'active' : null}`}
+            className={`tabnav__item ${activeTab === 1 ? 'active' : null}`}
             onClick={() => {
               setActiveTab(1)
             }}
           >
-            <ReelIcon active={activeTab == 1 ? 'active' : null} />
+            <ReelIcon className={'tabnav__icon'} active={activeTab == 1 ? 'active' : null} />
           </li>
           <li
-            className={`nav__item ${activeTab === 2 ? 'active' : null}`}
+            className={`tabnav__item ${activeTab === 2 ? 'active' : null}`}
             onClick={() => {
               setActiveTab(2)
             }}
           >
-            <IgtvIcon active={activeTab == 2 ? 'active' : null} />
+            <IgtvIcon className={'tabnav__icon'} active={activeTab == 2 ? 'active' : null} />
           </li>
           <li
-            className={`nav__item ${activeTab === 3 ? 'active' : null}`}
+            className={`tabnav__item ${activeTab === 3 ? 'active' : null}`}
             onClick={() => {
               setActiveTab(3)
             }}
           >
-            <TagsIcon active={activeTab == 3 ? 'active' : null} />
+            <TagsIcon className={'tabnav__icon'} active={activeTab == 3 ? 'active' : null} />
           </li>
         </ul>
       </nav>
 
-      <div className='content'>
-        <div className='content__item' hidden={activeTab != 0}>
+      <div className='tabcontent'>
+        <div className='tabcontent__item' hidden={activeTab != 0}>
           <PublicationsList />
         </div>
-        <div className='content__item' hidden={activeTab != 1}>
+        <div className='tabcontent__item' hidden={activeTab != 1}>
           tab2
         </div>
-        <div className='content__item' hidden={activeTab != 2}>
+        <div className='tabcontent__item' hidden={activeTab != 2}>
           tab3
         </div>
-        <div className='content__item' hidden={activeTab != 3}>
+        <div className='tabcontent__item' hidden={activeTab != 3}>
           tab4
         </div>
       </div>
