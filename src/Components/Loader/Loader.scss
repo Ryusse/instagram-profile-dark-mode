@@ -1,0 +1,62 @@
+@use "../../assets/scss/variables" as *;
+
+.loader {
+  position: relative;
+  margin: 6.25rem auto;
+  height: 7.5rem;
+  width: 7.5rem;
+  display: grid;
+  place-content: center;
+  border: 0px solid rgb(0, 0, 0);
+
+  &:after,
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 7.5rem;
+    width: 7.5rem;
+    border-radius: 50%;
+    border: 2px solid;
+  }
+
+  &:after {
+    -webkit-animation: rotate 2s infinite ease;
+    animation: rotate 2s infinite ease;
+    border-color: $blue transparent transparent;
+    -webkit-transform-origin: 50%;
+    transform-origin: 50%;
+  }
+
+  &:before {
+    border-color: $grayish;
+  }
+
+  &__text {
+    font-size: 1rem;
+    color: $grayish;
+  }
+}
+
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
