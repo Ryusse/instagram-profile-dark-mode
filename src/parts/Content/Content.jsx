@@ -25,7 +25,7 @@ export default function Content() {
   }
 
   return (
-    <div className='content'>
+    <main className='content'>
       <div className='content__header'>
         <ImageProfileContent user={user} />
         <Stats user={user} />
@@ -47,6 +47,6 @@ export default function Content() {
       <StoryList open={storyOpen} />
 
       <Tabs />
-    </div>
+    </main>
   )
 }

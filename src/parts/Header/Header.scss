@@ -1,6 +1,8 @@
 @use "../../assets/scss/variables" as *;
 
 .header {
+  grid-area: header;
+
   z-index: 1;
   position: sticky;
   top: 0;

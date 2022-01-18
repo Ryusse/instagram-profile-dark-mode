@@ -1,8 +1,11 @@
 @use "../../assets/scss/variables" as *;
 
 .content {
-  display: flex;
-  flex-direction: column;
+  grid-area: content;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, auto) 1fr;
   gap: 1rem;
 
   &__header {
