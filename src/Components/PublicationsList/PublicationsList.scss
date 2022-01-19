@@ -1,6 +1,12 @@
+@use "../../assets/scss/mixins" as *;
+
 .publications-grid {
   margin-top: 0.2rem;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
   gap: 2px;
+
+  @include query(md) {
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  }
 }
