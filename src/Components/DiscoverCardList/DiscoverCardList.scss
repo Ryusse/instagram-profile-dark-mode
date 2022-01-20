@@ -1,0 +1,13 @@
+@use "../../assets/scss/variables" as *;
+
+.discover-card-list {
+  padding: 0 $mobile-padding;
+  gap: 0.5rem;
+  display: flex;
+  overflow-x: scroll;
+  -ms-overflow-style: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}

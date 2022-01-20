@@ -1,6 +1,7 @@
 @use "../../assets/scss/variables" as *;
 
 .tabs {
+  position: relative;
   .tabnav {
     &__list {
       display: flex;
@@ -30,6 +31,12 @@
 
     &__icon path.active {
       fill: $black;
+    }
+  }
+
+  .tabcontent {
+    &__empty {
+      height: calc(100vh - 10.699rem);
     }
   }
 }

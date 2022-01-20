@@ -4,8 +4,12 @@
   display: grid;
   gap: 0.2rem;
 
+  &__name {
+    justify-self: start;
+  }
+
   &__website {
-    cursor: pointer;
+    justify-self: start;
     color: $dark-blue;
   }
 }

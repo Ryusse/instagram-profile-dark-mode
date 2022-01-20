@@ -22,12 +22,13 @@ export default function PublicationsList() {
 
   return (
     <div className='publications-grid'>
-      {!publications ? (
+      {/* {!publications ? (
         <Loader />
       ) : (
         Object.entries(publications) &&
         publications.data.map((publication, key) => <Publication key={key} publication={publication} />)
-      )}
+      )} */}
+      <p>no funciona ******</p>
     </div>
   )
 }
