@@ -7,6 +7,7 @@ import ReelIcon from '../../icons/ReelIcon'
 import IgtvIcon from '../../icons/IgtvIcon'
 import TagsIcon from '../../icons/TagsIcon'
 import PublicationsList from '../PublicationsList/PublicationsList'
+import { ContactEmpty } from '../ContactEmpty/ContactEmpty'
 
 export default function Tabs() {
   const [activeTab, setActiveTab] = useState(0)
@@ -51,17 +52,17 @@ export default function Tabs() {
       </nav>
 
       <div className='tabcontent'>
-        <div className='tabcontent__item' hidden={activeTab != 0}>
+        <div className='tabcontent__item tabcontent__empty' hidden={activeTab != 0}>
           <PublicationsList />
         </div>
-        <div className='tabcontent__item' hidden={activeTab != 1}>
-          tab2
+        <div className='tabcontent__item tabcontent__empty' hidden={activeTab != 1}>
+          <ContactEmpty />
         </div>
-        <div className='tabcontent__item' hidden={activeTab != 2}>
-          tab3
+        <div className='tabcontent__item tabcontent__empty' hidden={activeTab != 2}>
+          <ContactEmpty />
         </div>
-        <div className='tabcontent__item' hidden={activeTab != 3}>
-          tab4
+        <div className='tabcontent__item tabcontent__empty' hidden={activeTab != 3}>
+          <ContactEmpty />
         </div>
       </div>
     </div>

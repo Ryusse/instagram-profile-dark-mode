@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import { DiscoverCardList } from '../../Components/DiscoverCardList/DiscoverCardList'
 
 import ImageProfileContent from '../../Components/ImageProfile/ImageProfile'
 import Bio from '../../Components/Bio/Bio'
@@ -10,18 +11,16 @@ import Tabs from '../../Components/Tabs/Tabs'
 
 import './Content.scss'
 
-import user from '../../assets/data/users.json'
-
 export default function Content() {
   const [user, setUser] = useState(null)
-  const [storyOpen, setStoryOpen] = useState(false)
+  const [isDiscoverOpen, setIsDiscoverOpen] = useState(false)
 
   const handleToggle = () => {
-    function toggleStory(prevStoryOpen) {
-      return !prevStoryOpen
+    function toggleDiscoverOpen(prevIsDiscoverOpen) {
+      return !prevIsDiscoverOpen
     }
 
-    setStoryOpen(toggleStory)
+    setIsDiscoverOpen(toggleDiscoverOpen)
   }
 
   return (
@@ -36,15 +35,14 @@ export default function Content() {
       </div>
 
       <div className='content__buttons'>
-        <Button content={'Follow'} className={'button--cta'} />
-        <Button content={'Message'} className={'button--light'} />
+        <Button content={'Edit profile'} className={'button--light'} />
 
-        <div onClick={handleToggle}>
-          <Dropdown open={storyOpen} />
-        </div>
+        <Dropdown open={isDiscoverOpen} onClick={handleToggle} />
       </div>
 
-      <StoryList open={storyOpen} />
+      {isDiscoverOpen && <DiscoverCardList />}
+
+      <StoryList open={isDiscoverOpen} />
 
       <Tabs />
     </main>
