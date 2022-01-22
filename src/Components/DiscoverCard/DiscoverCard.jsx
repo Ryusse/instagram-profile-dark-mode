@@ -9,7 +9,9 @@ export default function DiscoverCard({ url }) {
         <img src={url} alt='profile image' />
       </figure>
       <h3 className='discover-card__title title-semibold'>Jennifer_billons</h3>
-      <p className='discover-card__text'>Followed by cute_littlesparkie </p>
+      <p className='discover-card__text'>
+        Followed by <br /> cute_littlesparkie{' '}
+      </p>
       <Button content={'Follow'} className={'button--cta'} />
     </div>
   )
