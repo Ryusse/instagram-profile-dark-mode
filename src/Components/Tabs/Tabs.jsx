@@ -52,7 +52,7 @@ export default function Tabs() {
       </nav>
 
       <div className='tabcontent'>
-        <div className='tabcontent__item tabcontent__empty' hidden={activeTab != 0}>
+        <div className='tabcontent__item ' hidden={activeTab != 0}>
           <PublicationsList />
         </div>
         <div className='tabcontent__item tabcontent__empty' hidden={activeTab != 1}>

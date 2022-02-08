@@ -3,6 +3,10 @@
 .tabs {
   position: relative;
   .tabnav {
+    position: sticky;
+    z-index: 1;
+    top: 60.59px;
+    background-color: $white;
     &__list {
       display: flex;
       justify-content: space-between;
@@ -23,7 +27,7 @@
         right: 0;
         left: 0;
         bottom: 0;
-        height: 1px;
+        height: 2px;
         background-color: $black;
         transition: all 0.25s ease-in-out;
       }
@@ -35,6 +39,7 @@
   }
 
   .tabcontent {
+    position: relative;
     &__empty {
       height: calc(100vh - 10.699rem);
     }

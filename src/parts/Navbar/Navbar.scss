@@ -1,8 +1,6 @@
 @use "../../assets/scss/variables" as *;
 
 .navbar {
-  grid-area: navbar;
-
   z-index: 2;
   position: sticky;
   bottom: 0;

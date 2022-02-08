@@ -4,3 +4,4 @@
 * Implementar react router para las vistas de la
 * Hacer el diseño de las otras secciones del tab para enriquecer la interfaz
 * Aumentar las historias
+* Fondo gris en publicaciones 

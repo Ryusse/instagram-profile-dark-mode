@@ -1,6 +1,7 @@
 @use "../../assets/scss/mixins" as *;
 
 .publications-grid {
+  position: relative;
   margin-top: 0.2rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);

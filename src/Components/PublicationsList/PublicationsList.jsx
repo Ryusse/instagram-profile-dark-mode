@@ -1,34 +1,23 @@
-import { useState, useEffect, useLayoutEffect } from 'react'
-
-import './PublicationsList.scss'
+import { useFetch } from '../../hooks/useFetch'
 
 import Publication from '../Publication/Publication'
 import Loader from '../Loader/Loader'
 
+import './PublicationsList.scss'
+
 export default function PublicationsList() {
-  const [publications, setPublications] = useState()
   const url = 'https://v1.nocodeapi.com/ryuse/instagram/vhYJlKPzKrCAnQPr'
 
-  const getPublications = async () => {
-    const response = await fetch(url)
-    const responseJSON = await response.json()
-    console.log(responseJSON)
-    setPublications(responseJSON)
-  }
-
-  useEffect(() => {
-    getPublications()
-  }, [])
+  const { publications, isLoading } = useFetch(url)
 
   return (
     <div className='publications-grid'>
-      {/* {!publications ? (
+      {isLoading ? (
         <Loader />
       ) : (
-        Object.entries(publications) &&
-        publications.data.map((publication, key) => <Publication key={key} publication={publication} />)
-      )} */}
-      <p>no funciona ******</p>
+        publications &&
+        publications.map((publication, key) => <Publication key={key} publication={publication} />)
+      )}
     </div>
   )
 }

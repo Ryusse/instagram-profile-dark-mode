@@ -1,7 +1,10 @@
 @use "../../assets/scss/variables" as *;
 
 .loader {
-  position: relative;
+  position: absolute;
+  top: 6rem;
+  left: 50%;
+  transform: translateX(-50%);
   margin: 3rem auto;
   height: 4rem;
   width: 4rem;
