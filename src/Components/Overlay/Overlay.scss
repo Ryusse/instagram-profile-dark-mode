@@ -1,6 +1,7 @@
 @use "../../assets/scss/variables" as *;
 
 .overlay {
+  z-index: 4;
   visibility: hidden;
   opacity: 0;
   display: block;

@@ -10,27 +10,11 @@ import './assets/scss/main.scss'
 import './App.scss'
 
 export default function App() {
-  const [isLoading, setIsLoading] = useState(true)
-
-  useEffect(() => {
-    window.addEventListener('load', () => {
-      setTimeout(() => {
-        setIsLoading(false)
-      }, 700)
-    })
-  })
-
   return (
-    <>
-      {isLoading === true ? (
-        <Preloader />
-      ) : (
-        <div className='app'>
-          <Header />
-          <Content />
-          <Navbar />
-        </div>
-      )}
-    </>
+    <div className='app'>
+      <Header />
+      <Content />
+      <Navbar />
+    </div>
   )
 }
